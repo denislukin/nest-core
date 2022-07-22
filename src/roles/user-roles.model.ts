@@ -13,7 +13,7 @@ interface UserRolesCreationlAttrs {}
 export class UserRoles extends Model<UserRoles, UserRolesCreationlAttrs> {
   @Column({
     type: DataType.INTEGER,
-    // unique: true,
+    unique: true,
     autoIncrement: true,
     primaryKey: true,
   })
